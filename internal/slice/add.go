@@ -1,6 +1,6 @@
 package slice
 
-import "dataStrcut-tool/internal/errs"
+import "github.com/dataStrcut-tool/internal/errs"
 
 // 新增
 func Add[T any](src []T, element T, index int) ([]T, error) {

@@ -1,4 +1,4 @@
-module dataStrcut-tool
+module github.com/dataStrcut-tool
 
 go 1.20
 
