@@ -16,6 +16,8 @@ func Delete[T any](src []T, index int) ([]T, T, error) {
 		src[i] = src[i+1]
 	}
 
+	// 去掉最后一个重复元素
 	src = src[:length-1]
+	src = Shrink(src)
 	return src, res, nil
 }

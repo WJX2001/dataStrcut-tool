@@ -5,7 +5,7 @@ func calCapacity(c, l int) (int, bool) {
 		return c, true
 	}
 
-	if c > 2048 && (c/l >= 2) {
+	if c > 2048 && (c/l >= 2) { // 缩容后留一点余地
 		factor := 0.625
 		return int(float32(c) * float32(factor)), true
 	}
